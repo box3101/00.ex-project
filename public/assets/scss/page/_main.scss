@@ -1,0 +1,1208 @@
+/* =================== visual =================== */
+.visual {
+  @include wh(100%);
+  @include bg-url("img", "images_main_1.png");
+
+  background-position: top;
+  position: relative;
+
+  @include media(mb) {
+    @include bg-url("img", "m_images_main_1.png");
+    background-size: cover;
+  }
+
+  &__img {
+    @include absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__txt-wrap {
+    &--tit {
+      @include font-op {
+        font-size: 2.0625rem;
+        font-weight: 300;
+        color: #fff;
+      }
+
+      padding-top: 18rem;
+    }
+
+    &--tit-mo {
+      padding-top: 8.25rem;
+
+      @include font-op {
+        text-align: center;
+        font-size: 1.625rem;
+        font-weight: 300;
+      }
+    }
+
+    &--tit-mo2 {
+      @include font-op {
+        text-align: center;
+        font-size: 2.4375rem;
+        font-weight: 300;
+        line-height: 1.6;
+      }
+
+      margin-top: 3.625rem;
+    }
+
+    &--txt {
+      @include wh(52.9375rem, 14.75rem);
+
+      position: relative;
+      right: -10.625rem;
+      margin-top: 16.9375rem;
+
+      img {
+        display: inline-block;
+        @include wh(100%, 100%);
+      }
+    }
+
+    &--txt-mo {
+      @include media(mb) {
+        @include wh(18rem, 5.625rem);
+
+        margin: 0 auto;
+        margin-top: 4.1875rem;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__about {
+    position: relative;
+    z-index: 2;
+    margin-top: 8.4375rem;
+
+    &--top-txt {
+      position: relative;
+      margin-bottom: 1.875rem;
+
+      .is-pos-txt {
+        @include font-op {
+          font-size: 3.125rem;
+          font-weight: 300;
+        }
+
+        display: inline-block;
+        margin-top: 3.625rem;
+
+        @include media(mb) {
+          font-size: 1.875rem;
+        }
+      }
+
+      .of-cases {
+        @include font-op {
+          font-size: 2.5rem;
+          font-weight: 700;
+          color: #0055fb;
+
+          @include media(mb) {
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin-right: 0.25rem;
+            bottom: -0.375rem;
+          }
+
+          .num {
+            display: inline-block;
+            margin-right: 0.9375rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0055fb;
+
+            @include media(mb) {
+              font-size: 1.25rem;
+              font-weight: 300;
+              margin-right: 0.25rem;
+            }
+          }
+        }
+
+        @include make-after {
+          @include wh(35.0625rem, 0.0625rem);
+
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          background: #0055fb;
+          opacity: 0.4;
+
+          @include media(mb) {
+            width: 4.8125rem;
+            bottom: 1.3125rem;
+            right: 23vw;
+          }
+        }
+
+        padding-bottom: 0.625rem;
+        position: absolute;
+        right: 0;
+        bottom: 1.5625rem;
+      }
+    }
+
+    &--mid-txt {
+      @include font-op {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 2.5rem;
+      }
+
+      @include media(mb) {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.625rem;
+      }
+    }
+
+    &--bot-txt {
+      @include font-op {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 2.5rem;
+      }
+
+      @include media(mb) {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+
+      margin-top: 0.3125rem;
+    }
+  }
+}
+
+/* =================== ceo =================== */
+.ceo {
+  @include bg-url("img", "bg-visual-company.png");
+  background-size: cover;
+  background-repeat: center;
+
+  padding-top: 11.625rem;
+  padding-bottom: 12.5rem;
+
+  .dot-line {
+    display: inline-block;
+    margin: 0.625rem 0;
+    padding-left: 0.9375rem;
+
+    @include media(mb) {
+      margin: 1.25rem 0;
+    }
+  }
+
+  &--list {
+    @include media(mb) {
+      margin-top: 0.3125rem;
+    }
+  }
+
+  &--item {
+    @include font-op {
+      font-size: 1.625rem;
+      font-weight: 300;
+      line-height: 3.125rem;
+    }
+
+    margin-bottom: 0.9375rem;
+
+    @include media(mb) {
+      font-size: 1.125rem;
+      line-height: 1;
+    }
+  }
+
+  &-column-bot {
+    position: relative;
+    z-index: 2;
+    background: #060211;
+
+    &__inner {
+      @include flex {
+        align-items: center;
+        justify-self: start;
+      }
+
+      height: 32.75rem;
+
+      @include media(mb) {
+        height: auto;
+      }
+    }
+
+    &__img {
+      @include wh(24.375rem, 38.3125rem);
+      position: relative;
+      top: -2.8125rem;
+      left: -0.3125rem;
+
+      img {
+        @include wh(100%, 100%);
+
+        display: inline-block;
+      }
+
+      @include media(mb) {
+        flex: 1 0 15.5rem;
+        height: 24.3125rem;
+
+        position: relative;
+        top: auto;
+        bottom: 0rem;
+        left: -5.25rem;
+        margin-top: -4.125rem;
+      }
+    }
+
+    &__txt {
+      position: relative;
+      right: 2.9375rem;
+      z-index: -1;
+
+      @include make-after {
+        @include wh(17.375rem, 0.0625rem);
+        position: absolute;
+        right: -100%;
+        top: 2.1875rem;
+
+        background: #0055fb;
+
+        @include media(mb) {
+          display: none;
+          top: auto;
+          bottom: 0;
+        }
+      }
+
+      p {
+        margin-bottom: 2.25rem;
+      }
+
+      @include media(mb) {
+        flex: 1 0 100%;
+        position: relative;
+        right: 7.4375rem;
+        bottom: -0.6875rem;
+        z-index: -1;
+      }
+    }
+  }
+
+  @include media(mb) {
+    padding-top: 4.5rem;
+    padding-bottom: 6.25rem;
+  }
+}
+
+/* =================== solution =================== */
+.solution {
+  @include bg-url("img", "images_main_5.png");
+  background-size: cover;
+
+  &__inner {
+    padding-top: 8.25rem;
+    padding-bottom: 6.875rem;
+
+    @include media(mb) {
+      padding-top: 4.6875rem;
+      padding-bottom: 3.375rem;
+    }
+  }
+
+  .cm-title.mid {
+    position: relative;
+    margin-top: 3.375rem;
+    margin-bottom: 0.625rem;
+
+    @include make-after {
+      @include wh(39.375rem, 0.0625rem);
+
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      bottom: 1.5625rem;
+      background: #0055fb;
+
+      @include media(mb) {
+        display: none;
+      }
+    }
+
+    @include media(mb) {
+      font-size: 1.8125rem;
+      font-weight: 700;
+      line-height: 2.1875rem;
+      margin-top: 2.25rem;
+    }
+  }
+
+  &__list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.2188rem;
+    margin-top: 1.875rem;
+
+    &--img {
+      @include wh(31.8125rem, 27.8125rem);
+
+      position: absolute;
+      right: -2.5rem;
+      top: -25.6875rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        vertical-align: bottom;
+      }
+
+      @include media(mb) {
+        @include wh(100%, auto);
+
+        position: relative;
+        top: 1.0625rem;
+        right: auto;
+      }
+    }
+
+    @include media(mb) {
+      margin-top: -0.75rem;
+    }
+  }
+
+  &__item {
+    @include wh(25%, 3.4375rem);
+
+    padding: 0 0.2188rem;
+    margin-bottom: 0.4375rem;
+
+    &--txt {
+      @include font-op {
+        text-align: center;
+        font-size: 1.375rem;
+        font-weight: 500;
+        line-height: 3.4375rem;
+        color: #000c23;
+
+        @include media(mb) {
+          font-size: 1rem;
+          line-height: 2.5rem;
+        }
+      }
+
+      background: #fff;
+    }
+
+    @include media(mb) {
+      width: 50%;
+      height: 2.5rem;
+    }
+  }
+}
+
+/* =================== market-status =================== */
+.market-status {
+  background-color: #dbdbdb;
+
+  &__inner {
+    @include wh(100%, 53.4375rem);
+    @include bg-url("img", "bg_market.png");
+
+    background-position: center;
+    background-size: cover;
+
+    @include media(mb) {
+      height: 33.4375rem;
+      @include bg-url("img", "bg_market-mo.png");
+      // background-position-y: 5.1875rem;
+    }
+  }
+
+  &__txt {
+    padding-top: 4.875rem;
+
+    @include media(mb) {
+      padding-top: 2.3125rem;
+    }
+  }
+}
+
+/* =================== ex-success =================== */
+.ex-success {
+  padding-top: 5.5625rem;
+  padding-bottom: 5.3125rem;
+  background: #0055fb;
+
+  &__list {
+    display: flex;
+    position: relative;
+    margin-top: 6.6875rem;
+    margin-left: 5.2rem;
+    width: 42.625rem;
+
+    @include media(mb) {
+      flex-direction: column;
+      left: 0;
+      transform: none;
+      margin-top: 8.125rem;
+    }
+  }
+
+  &__mo-wrap {
+    position: relative;
+
+    @include make-after {
+      @include wh(0.0625rem, 42.75rem);
+
+      position: absolute;
+      right: 7.5rem;
+      top: 11.25rem;
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .op-2 {
+      position: absolute;
+      top: -0.5rem;
+      right: 0;
+      font-size: 3.125rem;
+      font-weight: 700;
+    }
+  }
+
+  .op-txt {
+    position: absolute;
+    right: -5.625rem;
+    top: -11.75rem;
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  &__item {
+    position: relative;
+    width: 33.3%;
+    margin: 0 0.625rem;
+
+    @include media(mb) {
+      margin-bottom: 6.875rem;
+      width: 26.3%;
+    }
+  }
+
+  &__txt-wrap {
+    background: #fff;
+    width: 100%;
+    height: 17.5625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 1.625rem;
+
+    .txt {
+      @include font-op {
+        font-size: 1.875rem;
+        font-weight: 500;
+        line-height: 2.4375rem;
+        color: #000c23;
+      }
+
+      margin-bottom: 0.625rem;
+
+      @include media(mb) {
+        font-size: 1.5rem;
+        line-height: 1.9375rem;
+        margin-bottom: 0.8125rem;
+      }
+    }
+
+    .tit {
+      @include font-op {
+        font-size: 2.25rem;
+        font-weight: 700;
+        line-height: 1;
+        color: #000c23;
+      }
+
+      margin-bottom: 1.375rem;
+
+      @include media(mb) {
+        font-size: 1.8125rem;
+        line-height: 2.5rem;
+      }
+    }
+
+    @include media(mb) {
+      height: 15.5rem;
+      align-items: flex-start;
+      padding-left: 1.9375rem;
+    }
+  }
+
+  @include media(mb) {
+    padding-top: 3.4375rem;
+    padding-bottom: 0;
+  }
+}
+
+/* =================== partner =================== */
+.partner {
+  padding: 5rem 0;
+
+  &__pos {
+    text-align: center;
+  }
+
+  &__ad-list {
+    width: 66.875rem;
+    margin-left: -6.25rem;
+    margin-right: -6.25rem;
+    margin-top: 5.3125rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media(mb) {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 1.75rem;
+    }
+  }
+
+  &__ad-item {
+    width: 20%;
+
+    img {
+      width: 100%;
+      height: 5.125rem;
+
+      @include media(mb) {
+        height: 3.75rem;
+        margin-bottom: 0.625rem;
+      }
+    }
+
+    @include media(mb) {
+      width: 50%;
+    }
+  }
+
+  @include media(mb) {
+    padding: 0.9375rem 0;
+  }
+}
+
+/* =================== main-ad =================== */
+.main-ad {
+  padding: 5.3125rem 0;
+  background: #060210;
+
+  @include media(mb) {
+    padding: 4.5rem 0;
+  }
+
+  .cm-title.mid-sm {
+    margin-top: 1.6875rem;
+    padding-left: 1.5625rem;
+  }
+
+  .cm-title.mid-sm.mt17 {
+    position: relative;
+    margin-top: 1.0625rem;
+
+    @include make-after {
+      width: 28rem;
+      height: 0.0625rem;
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      bottom: 4.1875rem;
+      background: #0055fb;
+
+      @include media(mb) {
+        width: 34.722222%;
+        /* 125/360 */
+        bottom: 2.6875rem;
+      }
+    }
+  }
+}
+
+/* =================== main-ad02 =================== */
+.main-ad02 {
+  @include bg-url("img", "images_main_14.png");
+
+  position: relative;
+  background-color: #707070;
+  height: 44.125rem;
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+
+  .cm-title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @include media(mb) {
+    // @include bg-url("img", "m_images_main_6.png");
+    height: 27.625rem;
+  }
+}
+
+/* =================== 
+
+=================== */
+.team {
+  background: #060210;
+  padding-top: 16.25rem;
+  padding-bottom: 5rem;
+  position: relative;
+  overflow: hidden;
+
+  @include media(mb) {
+    padding-top: 4.375rem;
+    overflow: visible;
+    padding-bottom: 0.0625rem;
+  }
+
+  .obj1 {
+    @include wh(100rem, 100.3125rem);
+
+    border-radius: 50%;
+    background: #006bf1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60rem;
+
+    @include media(mb) {
+      @include wh(58.125rem, 61.25rem);
+
+      transform: translateX(-36%);
+      top: 38rem;
+    }
+  }
+
+  &__position {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media(mb) {
+      margin-top: 11.5rem;
+    }
+
+    &:nth-of-type(1) {
+      margin-left: 6.0625rem;
+      position: relative;
+      top: 1.4375rem;
+
+      @include media(mb) {
+        margin-left: 2.4375rem;
+        position: relative;
+        top: 0.8125rem;
+      }
+    }
+
+    &:nth-of-type(2) {
+      margin: 0;
+      margin-bottom: 8rem;
+
+      @include media(mb) {
+        margin-bottom: 5rem;
+      }
+    }
+
+    &--img {
+      position: absolute;
+      right: -5.625rem;
+      bottom: -9.1875rem;
+      width: 36.375rem;
+      height: 54.6875rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      @include media(mb) {
+        @include wh(22.5rem, 34.375rem);
+
+        right: -4.5rem;
+        bottom: -5.375rem;
+      }
+    }
+
+    &--list {
+      @include wh(13.5rem, 13.5rem);
+
+      @include font-op {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        color: #ffffff;
+        line-height: 13.5rem;
+      }
+
+      border-radius: 50%;
+      margin: -0.75rem;
+      opacity: 0.9;
+
+      @include media(mb) {
+        @include wh(5.5rem, 5.5rem);
+        font-size: 1rem;
+        line-height: 5.5rem;
+        margin: -0.25rem;
+      }
+    }
+  }
+
+  &__pos-txt {
+    position: relative;
+    z-index: 1;
+
+    .cm-title {
+      margin-bottom: 0.9375rem;
+    }
+  }
+
+  &__ceo-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.375rem;
+    margin-top: 6.875rem;
+    position: relative;
+    z-index: 2;
+
+    @include media(mb) {
+      margin-top: 2.5rem;
+    }
+
+    &--item {
+      width: 25%;
+      padding: 0 0.375rem;
+
+      @include media(mb) {
+        width: 50%;
+        margin-bottom: 1.875rem;
+      }
+
+      &:nth-of-type(2n) {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .team__ceo-list--item-txt {
+          padding-top: 0;
+          padding-bottom: 1.25rem;
+        }
+      }
+
+      &-img {
+        width: 100%;
+        height: 18.75rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        @include media(mb) {
+          height: auto;
+          @media screen and (-ms-high-contrast: active),
+            (-ms-high-contrast: none) {
+            height: 18.75rem;
+          }
+        }
+      }
+
+      &-txt {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 1.25rem;
+
+        .is-tit {
+          @include font-op {
+            font-size: 1.625rem;
+            font-weight: 300;
+            line-height: 2.5rem;
+          }
+
+          .fz-bold {
+            font-size: 1.25rem;
+
+            @include media(mb) {
+              font-size: 0.9375rem;
+            }
+          }
+
+          @include media(mb) {
+            font-size: 1.1875rem;
+            line-height: 1.5625rem;
+            margin-bottom: 0.3125rem;
+          }
+        }
+
+        .is-txt {
+          @include font-op {
+            font-size: 1.25rem;
+            font-weight: 300;
+            line-height: 2.4375rem;
+          }
+
+          @include media(mb) {
+            font-size: 0.9375rem;
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &__package {
+    margin-top: 4.8125rem;
+    position: relative;
+    z-index: 2;
+
+    &--title {
+      position: relative;
+
+      @include flex {
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      @include make-after {
+        @include wh(35rem, 0.0625rem);
+
+        position: absolute;
+        left: 50%;
+        transform: translateX(-55%);
+        bottom: 2rem;
+        background: #fff;
+
+        @include media(mb) {
+          @include wh(33.611111%, 0.0625rem);
+
+          bottom: 1.125rem;
+        }
+      }
+
+      .cm-title {
+        text-align: right;
+      }
+    }
+
+    &--column {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin-top: 1.6875rem;
+
+      @include media(mb) {
+        flex-direction: column;
+      }
+
+      .column-left {
+        display: flex;
+        align-items: flex-end;
+
+        &__txt {
+          margin-left: 0.75rem;
+
+          @include media(mb) {
+            padding-left: 4.375rem;
+          }
+        }
+
+        @include media(mb) {
+          flex-direction: column;
+          align-items: start;
+        }
+      }
+
+      .column-right {
+        display: flex;
+        align-items: flex-end;
+
+        img {
+          @include wh(5.625rem, 4.6875rem);
+
+          @include media(mb) {
+            @include wh(2.8125rem, 2.3125rem);
+          }
+        }
+
+        .is-txt {
+          @include font-op {
+            font-size: 1.875rem;
+            font-weight: 300;
+          }
+
+          position: relative;
+          bottom: 1.125rem;
+
+          @include media(mb) {
+            flex-direction: column;
+            align-items: center;
+            bottom: 0;
+            font-size: 1.25rem;
+          }
+        }
+
+        @include media(mb) {
+          margin-top: 0.4375rem;
+          margin-left: 4.5625rem;
+          align-items: center;
+        }
+      }
+    }
+
+    &--box {
+      border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.7);
+      padding-bottom: 2rem;
+      margin-bottom: 2.625rem;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+      @include media(mb) {
+        border-bottom: none;
+      }
+    }
+
+    &--info {
+      margin-top: 3.4375rem;
+      display: flex;
+
+      @include media(mb) {
+        flex-direction: column;
+        margin-left: 5.0625rem;
+        margin-top: 2.5rem;
+        border-bottom: 0.0625rem solid #dbdbdb;
+        display: inline-flex;
+        padding-bottom: 0.6875rem;
+      }
+
+      &__list {
+        width: 33.3%;
+
+        @include media(mb) {
+          width: 100%;
+        }
+      }
+
+      &__item {
+        @include font-op {
+          font-size: 1.5rem;
+          font-weight: 300;
+          line-height: 1;
+        }
+
+        @include make-before {
+          @include wh(1.4375rem, 0.0625rem);
+
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0;
+          background: #ffffff;
+        }
+
+        position: relative;
+        padding-left: 2.5rem;
+        margin-bottom: 1.25rem;
+
+        @include media(mb) {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/* =================== detail =================== */
+.detail-section {
+  @include bg-url(img, "images_main_17.png");
+  @include bg-option;
+
+  @include media-custom(768px) {
+    @include bg-url(img, "m_images_main_3.png");
+  }
+
+  .l-center {
+    position: relative;
+    padding-top: remSize(102);
+
+    @include media-custom(768px) {
+      padding-top: 2.25rem;
+    }
+  }
+
+  &__center-txt {
+    margin: 1.5625rem 0;
+
+    @include media-custom(768px) {
+      margin: 2.1875rem 0 0.8125rem;
+    }
+  }
+
+  .cm-title {
+    font-weight: 300;
+  }
+
+  .cm-speech-bubble {
+    @include wh(10.75rem, 5rem);
+
+    top: -3.125rem;
+    left: auto;
+    right: 0;
+    border-radius: 0.5625rem;
+    background-color: color(sub);
+
+    @include media-custom(768px) {
+      width: 7.5625rem;
+      height: 4.375rem;
+      font-size: 1.625rem;
+    }
+    @include media-custom(600px) {
+      right: 1rem;
+      transform: none;
+    }
+
+    &:before {
+      bottom: -0.8125rem;
+      border-bottom-color: color(sub);
+      transform: rotate(-163deg);
+    }
+  }
+
+  .with-line__txt {
+    color: color(sub);
+  }
+
+  .with-line:after {
+    background-color: color(sub);
+  }
+
+  .round-box-wrap {
+    margin: remSize(120) 0;
+
+    @include media-custom(768px) {
+      margin: 4.875rem 0 4.125rem;
+    }
+  }
+
+  &__img-wrap {
+    width: 80%;
+    margin: 0 auto;
+
+    @include media-custom(768px) {
+      width: 100%;
+      padding: 0 1rem;
+      padding-bottom: 1.25rem;
+    }
+  }
+
+  &__last-text {
+    margin-top: 3.75rem;
+
+    @include media-custom(768px) {
+      margin-top: 2.3125rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
+
+/* =================== regist =================== */
+.regist-section {
+  @include bg-url(img, "images_main_22.png");
+  @include bg-option;
+
+  padding: remSize(130) 0 remSize(565);
+
+  @include media-custom(768px) {
+    padding-top: 4.8125rem;
+  }
+
+  @include media-custom(600px) {
+    @include bg-url(img, "images_main_22_mo.png");
+  }
+
+  &__first-center-text {
+    margin-top: 1.5625rem;
+    margin-bottom: 3.75rem;
+
+    @include media-custom(768px) {
+      margin-top: 1.125rem;
+      margin-bottom: 2.3125rem;
+    }
+  }
+
+  .sub-text {
+    font-weight: 300;
+  }
+
+  .btn-wrap {
+    margin-top: 2.1875rem;
+    border-top: 0.0625rem solid rgba(#000c23, 0.2);
+    padding: 2.1875rem 1.5rem 0;
+
+    @include media-custom(768px) {
+      margin-top: 1.5625rem;
+      padding: 1.125rem 0 0;
+    }
+  }
+
+  .with-line {
+    margin-top: remSize(60);
+    font-size: 3.125rem;
+
+    @include media-custom(768px) {
+      font-size: 1.875rem;
+    }
+  }
+
+  .with-line__txt {
+    width: 7.5em;
+
+    @include media-custom(768px) {
+      width: 7.2em;
+    }
+    @include media-custom(600px) {
+      width: 10em;
+    }
+    @include media-custom(20.625rem) {
+      width: 12em;
+    }
+  }
+}
+
+.ceo {
+  background-repeat: no-repeat;
+  position: relative;
+}

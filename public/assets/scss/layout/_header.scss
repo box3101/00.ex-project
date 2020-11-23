@@ -1,0 +1,294 @@
+/* =================== header =================== */
+.header {
+  @include fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  z-index: zIndex(header);
+
+  @include media-custom(1590px) {
+    height: 70px;
+    background: #000000;
+  }
+  @include media(mb) {
+    height: 50px;
+    background: #000000;
+  }
+}
+
+.move-top {
+  position: fixed;
+  right: 100px;
+  bottom: 28px;
+
+  @include media-custom(1590px) {
+    right: 30px;
+  }
+
+  @include media(mb) {
+    right: 15px;
+
+    img {
+      display: inline-block;
+      width: 37px;
+      height: 37px;
+    }
+  }
+}
+
+/* =================== gnb =================== */
+.gnb {
+  @include fixed;
+
+  top: 99px;
+  left: 138px;
+  float: right;
+
+  @include media-custom(1590px) {
+    display: none;
+  }
+
+  &__item {
+    margin-bottom: 13px;
+
+    &--link {
+      @include wh(206px, 55px);
+      @include font-op {
+        font-size: 20px;
+        font-weight: 500;
+        color: #000c23;
+        line-height: 55px;
+      }
+
+      display: inline-block;
+      padding-left: 19px;
+      background: #fff;
+      transition: all 0.4s;
+
+      &:hover {
+        background: #0055fb;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+/* =================== logo =================== */
+.logo {
+  position: fixed;
+
+  top: 34px;
+  left: 99px;
+
+  a {
+    display: inherit;
+  }
+
+  @include media-custom(1590px) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+  }
+
+  @include media(mb) {
+    left: 16px;
+
+    @include wh(158px, 20px);
+
+    img {
+      @include wh(100%, 100%);
+      display: inherit;
+      object-fit: cover;
+    }
+  }
+}
+
+/* =================== open-mb =================== */
+.nav-button {
+  @include flex-column {
+    @include flex-item-center;
+  }
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 50px;
+  height: 50px;
+  z-index: 10000;
+  cursor: pointer;
+  border-radius: 0;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  outline: 0;
+
+  @include media-custom(1590px) {
+    opacity: 1;
+  }
+
+  @include make-before($d: block) {
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    transition: all 0.7s;
+  }
+
+  .hamburger {
+    margin: 6px 0;
+    z-index: 1;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    display: block;
+
+    @include media(mb) {
+      margin: 5px 0;
+    }
+  }
+
+  @include make-after($d: block) {
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    transition: all 0.7s;
+  }
+}
+#open-mb-nav:checked ~ .mb-pannel {
+  right: 0%;
+  opacity: 1;
+}
+#open-mb-nav:checked + .nav-button:before {
+  transform: translateY(9px) rotate(-315deg);
+  background: color(text);
+}
+#open-mb-nav:checked ~ .nav-button .hamburger {
+  transition: all 0.7s;
+  height: 5px;
+  background: color(text);
+  opacity: 0;
+
+  @include media-custom(768px) {
+    height: 7px;
+  }
+}
+#open-mb-nav:checked + .nav-button::after {
+  transform: translateY(-10px) rotate(315deg);
+  background: color(text);
+}
+.mb-pannel {
+  @include wh(32.875rem, 100vh);
+
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  padding: 9.375rem 0;
+  background: white;
+  right: -100%;
+  opacity: 0;
+  transition: all 1s;
+  transition-timing-function: cubic-bezier(0.15, 0.52, 0.15, 1);
+
+  @include media-custom(600px) {
+    width: 70%;
+    padding: 0;
+    padding-top: 130px;
+  }
+  @include media-custom(360px) {
+    padding-top: 80px;
+  }
+  @include media-custom(321px) {
+    padding-top: 50px;
+  }
+  @include media-custom(300px) {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .mb-close {
+    position: absolute;
+    top: 3.0625rem;
+    right: 6.75rem;
+    cursor: pointer;
+
+    @include media(mb) {
+      right: 1.6875rem;
+    }
+  }
+
+  &__item {
+    .thum-txt {
+      @include font-op {
+        font-size: 1rem;
+        font-weight: 600;
+        color: color(text);
+        opacity: 0.5;
+
+        transition: all 0.3s;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      transition: all 0.3s;
+      margin-left: 1.75rem;
+
+      &.ml15 {
+        margin-left: 0.9375rem;
+      }
+
+      @include media(mb) {
+        margin-left: 4.8125rem;
+        font-size: 16px;
+        opacity: 0.6;
+      }
+
+      @include media-custom(20.0625rem) {
+        font-size: 1.275rem;
+        margin-left: 3.3125rem;
+        opacity: 0.6;
+        margin-top: 0.1875rem;
+      }
+    }
+  }
+
+  &__link {
+    @include flex {
+      @include flex-item-option(center, flex-start);
+    }
+    @include wh(100%, 65px);
+    @include font-op {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: color(text);
+      transition: all 0.3s;
+    }
+
+    padding: 0 28px;
+
+    @include media(mb) {
+      font-size: 24px;
+      font-weight: 600;
+      opacity: 1;
+    }
+
+    @include media-custom(360px) {
+      height: 55px;
+      font-size: 20px;
+    }
+    @include media-custom(321px) {
+      height: 50px;
+      font-size: 18px;
+    }
+
+    &:hover {
+      background-color: color(main);
+      color: white;
+      font-weight: 600;
+      opacity: 1;
+    }
+  }
+}

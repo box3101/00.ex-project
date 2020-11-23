@@ -1,0 +1,56 @@
+/* =================== button =================== */
+.btn {
+  @include input-reset;
+  @include flex(inline-flex) {
+    @include flex-item-center;
+  }
+
+  cursor: pointer;
+
+  &.is-disabled {
+    background-color: gray;
+    cursor: default;
+  }
+
+  // .btn-wrap .btn-fixed-wrap btn-double-wrap ...
+  &-wrap {
+    @include flex {
+      @include flex-item-option(center, space-between);
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.default-btn {
+  @include wh(100%, 95px);
+
+  justify-content: space-between;
+  padding: 0 26px;
+  background-color: color(text);
+  color: white;
+
+  @include media-custom(768px) {
+    height: 57px;
+    padding: 0 14px;
+  }
+
+  &__text {
+    font-size: remSize(40);
+    font-weight: 700;
+
+    @include media-custom(768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__sub-text {
+    font-size: remSize(20);
+    font-weight: 700;
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
+
+    @include media-custom(768px) {
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,249 @@
+/* =================== layout =================== */
+.wrap,
+#app {
+  // height: 100%;
+
+  @include media-custom(768px, min) {
+    min-width: 1250px;
+  }
+
+  @include media-custom(768px) {
+    min-width: 100%;
+  }
+}
+#page {
+  min-height: 100%;
+}
+
+html,
+body {
+  @include media-custom(768px) {
+    overflow-x: hidden;
+  }
+  @include media-custom(321px) {
+    font-size: 12px;
+  }
+}
+
+.l-center {
+  max-width: 55rem;
+  margin: 0 auto;
+
+  @include media-custom(768px) {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+// cm-title
+.cm-title {
+  position: relative;
+
+  @include font-op {
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: 4.0625rem;
+  }
+
+  &.mid {
+    @include font-op {
+      color: #0055fb;
+      font-size: 2.875rem;
+      line-height: 3.5rem;
+      font-weight: 700;
+    }
+  }
+
+  &.mid-sm {
+    @include font-op {
+      color: #fff;
+      font-size: 1.875rem;
+      line-height: 2.8125rem;
+      font-weight: 300;
+    }
+
+    @include media(mb) {
+      font-size: 1.1875rem;
+      line-height: 1.8125rem;
+    }
+  }
+
+  &.sm {
+    @include font-op {
+      color: #0055fb;
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    margin-bottom: 0.7813rem;
+
+    @include media(mb) {
+      font-size: 0.875rem;
+    }
+  }
+
+  &.sm-lg {
+    @include font-op {
+      font-size: 2.5rem;
+      line-height: 3.4375rem;
+      font-weight: 300;
+    }
+
+    @include media(mb) {
+      font-size: 1.625rem;
+      line-height: 2.125rem;
+    }
+  }
+
+  @include media(mb) {
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+  }
+}
+
+// cm-partner
+.cm-partner {
+  display: inline-flex;
+  margin-top: 1.25rem;
+  height: 1.8125rem;
+
+  &__txt {
+    @include font-op {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    height: 1.6875rem;
+    padding: 0.3125rem;
+    box-sizing: border-box;
+  }
+}
+
+// 가로줄이 같이있는 레이아웃: 색지정하기
+.with-line {
+  @include flex {
+    @include flex-item-center;
+  }
+  font-size: 1.875rem;
+
+  @include media-custom(768px) {
+    font-size: 1.25rem;
+  }
+
+  &__txt {
+    display: block;
+    width: 7em;
+    margin-right: 0.625rem;
+
+    @include media-custom(600px) {
+      width: 8em;
+    }
+    @include media-custom(360px) {
+      width: 10em;
+    }
+  }
+
+  @include make-after($d: block) {
+    @include wh(100%, 0.0625rem);
+
+    background-color: white;
+  }
+}
+
+// round box
+.round-box-wrap {
+  @include flex-column {
+    @include flex-item-center;
+  }
+}
+.round-box {
+  @include flex {
+    @include flex-item-center;
+  }
+  @include wh(30.5rem, 5.625rem);
+
+  border-radius: 2.8125rem;
+  background-color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+
+  @include media-custom(768px) {
+    @include wh(100%, 3.125rem);
+
+    max-width: 17.375rem;
+    font-size: 1.375rem;
+  }
+
+  &.is-black {
+    background-color: black;
+  }
+
+  &__side-text {
+    @include font-op($c: color(sub), $w: 500) {
+      font-size: 2.1875rem;
+    }
+
+    margin: 1rem 0;
+    border-bottom: 0.0625rem solid color(sub);
+    padding-bottom: 0.1875rem;
+
+    @include media-custom(768px) {
+      margin: 0.5625rem 0 0.9375rem;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.white-box-content {
+  margin-bottom: 2.25rem;
+
+  @include media-custom(768px) {
+    margin-bottom: 1.25rem;
+  }
+  &__text {
+    background-color: white;
+    color: color(text);
+  }
+
+  @include make-before($d: block) {
+    @include wh(0.0625rem, 7.5rem);
+
+    margin: 3.4375rem 0;
+    margin-left: 2.6875rem;
+    background-color: white;
+
+    @include media-custom(768px) {
+      height: 4.625rem;
+      margin: 2.125rem;
+    }
+  }
+}
+
+.white-block {
+  position: relative;
+  margin: remSize(80) 0 remSize(70);
+  padding: remSize(70);
+
+  @include media-custom(768px) {
+    margin-top: 11.5625rem;
+    padding: 5.25rem 2.75rem 1.75rem;
+  }
+
+  .obj__img {
+    @include absolute($t: -11.375rem, $r: 1.25rem);
+
+    @include media-custom(768px) {
+      top: -9.5rem;
+      width: 12.8125rem;
+    }
+    @include media-custom(600px) {
+      top: -7.0625rem;
+      width: 48%;
+    }
+  }
+
+  .sub-title {
+    font-weight: 700;
+    margin-bottom: 2.375rem;
+  }
+}

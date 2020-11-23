@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>기획부터 디자인, 개발, 마케팅까지 모두 한번에 포켓서비스</title>
+
+  <meta name="title" content="web title">
+  <meta name="author" content="web company">
+  <meta name="description" content="기획부터 디자인, 개발, 마케팅까지
+  모두 한번에 포켓서비스">
+  <meta name="keywords" content="IT플랫폼, 제조유통, 프랜차이즈 성공창업">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="해당 웹 URL">
+  <meta property="og:title" content="POCKER COMPANY">
+  <meta property="og:description" content="기획부터 디자인, 개발, 마케팅까지 모두 한번에 포켓서비스">
+  <meta property="og:image" content="assets/images/icon/favicon/meta-thumbnail.png">
+  <!-- END Open Graph -->
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon/favicon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon/favicon/android-chrome-36x36.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon/favicon/android-chrome-48x48.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon/favicon/android-chrome-72x72.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon/favicon/android-chrome-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon/favicon/android-chrome-144x144.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon/favicon/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon/favicon/android-chrome-256x256.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon/favicon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icon/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icon/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/icon/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/images/icon/favicon/safari-pinned-tab.svg" color="#1D1D1D">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="assets/js/vendor/wow.js"></script>
+
+  <!-- css link -->
+  <link rel="stylesheet" href="assets/css/vendor/normalize.css">
+  <link rel="stylesheet" href="assets/css/vendor/animation.css">
+  <link rel="stylesheet" href="assets/css/custom/ui.css">
+</head>
+
+<body ontouchstart>
+  <div id="app">
+    <div class="wrap">
+
+      <header class="header">
+        <div class="header__inner">
+          <h1 class="logo">
+            <a href="index.html">
+              <img src="assets/images/img/logo_wh.svg" alt="로고 이미지">
+            </a>
+          </h1>
+          <ul class="gnb">
+            <li class="gnb__item">
+              <a href="#gnb-about" class="gnb__item--link is-active">About 포켓</a>
+            </li>
+            <li class="gnb__item">
+              <a href="#gnb-ceo" class="gnb__item--link">CEO 니즈</a>
+            </li>
+            <li class="gnb__item">
+              <a href="#gnb-market" class="gnb__item--link">시장현황</a>
+            </li>
+            <li class="gnb__item">
+              <a href="#gnb-solution" class="gnb__item--link">포켓 솔루션</a>
+            </li>
+            <li class="gnb__item">
+              <a href="#gnb-partner" class="gnb__item--link">성공사례 & 파트너</a>
+            </li>
+            <li class="gnb__item">
+              <a href="#gnb-team" class="gnb__item--link">포켓 TEAM</a>
+            </li>
+            <li class="gnb__item">
+              <a href="#gnb-package" class="gnb__item--link">패키지 구성</a>
+            </li>
+            <li class="gnb__item">
+              <a href="#gnb-detail" class="gnb__item--link">패키지 Detail</a>
+            </li>
+          </ul>
+
+          <!-- 모바일 메뉴 -->
+          <div class="hd-type-mb">
+            <input type="checkbox" id="open-mb-nav" class="none">
+            <label for="open-mb-nav" class="nav-button">
+              <span class="hamburger"></span>
+            </label>
+
+            <div class="mb-pannel">
+              <div class="mb-pannel__inner">
+                <ul class="mb-pannel__list">
+                  <li class="mb-pannel__item">
+                    <a href="#gnb-about" class="mb-pannel__link is-active">About 포켓</a>
+                  </li>
+                  <li class="mb-pannel__item">
+                    <a href="#gnb-ceo" class="mb-pannel__link">CEO 니즈</a>
+                  </li>
+                  <li class="mb-pannel__item">
+                    <a href="#gnb-market" class="mb-pannel__link">시장현황</a>
+                  </li>
+                  <li class="mb-pannel__item">
+                    <a href="#gnb-solution" class="mb-pannel__link">포켓 솔루션</a>
+                  </li>
+                  <li class="mb-pannel__item">
+                    <a href="#gnb-solution" class="mb-pannel__link">성공사례 & 파트너</a>
+                  </li>
+                  <li class="mb-pannel__item">
+                    <a href="#gnb-team" class="mb-pannel__link">포켓 TEAM</a>
+                  </li>
+                  <li class="mb-pannel__item">
+                    <a href="#gnb-package" class="mb-pannel__link">패키지 구성</a>
+                  </li>
+                  <li class="mb-pannel__item">
+                    <a href="#gnb-detail" class="mb-pannel__link">패키지 Detail</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- 모바일 메뉴 eee -->
+        </div>
+
+        <div class="move-top">
+          <a href="#" class="btn move-top-btn">
+            <img src="assets/images/img/move-top.svg" alt="위로" />
+          </a>
+        </div>
+      </header>
+
+      <!-- page -->
+      <div id="page" class="main">
+        <!-- visual -->
+        <section class="visual">
+          <div class="visual__inner l-center">
+            <div class="visual__info">
+              <div class="visual__txt-wrap">
+                <div class="visual__txt-wrap--tit is-mo-hide">
+                  IT플랫폼 · 제조유통 · 프랜차이즈
+                </div>
+                <div class="visual__txt-wrap--tit-mo is-mo-show">
+                  IT플랫폼
+                  <span class="mo-dot"></span>
+                  제조유통
+                  <span class="mo-dot"></span>
+                  프랜차이즈
+                </div>
+
+                <h2 class="visual__txt-wrap--tit-mo2 is-mo-show">
+                  <span class="fz-ex-bold">직원1명</span> 급여로 <br>
+                  <span class="bg-blue fz-ex-bold">성공 창업</span>을 <br>
+                  할 수 <span class="fz-ex-bold">있다면?</span>
+                </h2>
+                <div class="visual__txt-wrap--txt is-mo-hide">
+                  <img src="assets/images/img/images_main_2.png" alt="성공창업" class="wow fadeInUp" data-wow-delay="0.2s">
+                </div>
+                <div class="visual__txt-wrap--txt-mo is-mo-show">
+                  <img src="assets/images/img/images_main_2-mo.svg" alt="성공창업">
+                </div>
+              </div>
+
+              <!-- visual-About -->
+              <div class="visual__about" id="gnb-about">
+                <div class="visual__about--inner">
+                  <div class="visual__about--top-txt wow fadeInUp" data-wow-offset="400">
+                    <div class="cm-title">
+                      <span class="col-blue">포켓컴퍼니</span><span class="fz-light">와</span> <br>
+                      함께라면,
+                    </div>
+                    <span class="is-pos-txt">가능합니다.</span>
+
+                    <div class="of-cases">
+                      <span class="num">1,458</span>건
+                    </div>
+                  </div>
+                  <div class="wow fadeIn" data-wow-delay="0.3s">
+                    <div class="visual__about--mid-txt">
+                      포켓컴퍼니는 최단기간 국내 최다 <br>
+                      올인원컨설팅 <span class="fz-bold">(15개월 1,485건)</span>을 <br class="is-mo-show"> 기록하고, 현재까지 <br>
+                      5,000명 이상의 CEO와 파트너쉽을 맺은
+                    </div>
+                    <div class="visual__about--bot-txt">
+                      창업컨설팅사입니다
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- visual-About eee -->
+            </div>
+          </div>
+        </section>
+        <!-- visual eee -->
+
+        <!-- ceo -->
+        <section class="ceo" id="gnb-ceo">
+          <div class="ceo--inner l-center">
+            <div class="wow fadeInUp">
+              <div class="cm-title sm">
+                <img src="assets/images/img/pocket-color.svg" alt="" class="cm-pocket-title">
+              </div>
+              <h2 class="cm-title">
+                5천명 이상의 <br class="is-mo-show"> CEO분들을 <br>
+                뵙고 보니, <br>
+                모두 <span class="bg-blue typo">비슷</span>한 <span class="bg-blue typo">말씀</span>들만 <br>
+                하십니다.
+              </h2>
+            </div>
+            <div class="dot-line">
+              <img src="assets/images/img/dot-line.svg" alt="">
+            </div>
+            <ul class="ceo--list">
+              <li class="ceo--item wow fadeInUp">“ <span class="col-blue">장사가 아니라</span> 사업을 하고 싶다 ”</li>
+              <li class="ceo--item wow fadeInUp" data-wow-delay="0.3s">“ 나만의 브랜드<span class="col-blue">를 가져보고 싶다</span>
+                ”</li>
+              <li class="ceo--item wow fadeInUp" data-wow-delay="0.6s">“ 경제적 자유를 얻은 CEO<span class="col-blue">가
+                  되고싶다</span> ”</li>
+              <li class="ceo--item wow fadeInUp" data-wow-delay="0.9s">“ <span class="col-blue">IT가 빠르게 변화하는데</span>,
+                뒤쳐지기 싫다 ”</li>
+              <li class="ceo--item wow fadeInUp" data-wow-delay="1.2s">“ <span class="col-blue">내가</span> 하고싶은 일을 하면서
+                <span class="col-blue">돈벌고 싶다</span>
+                ”</li>
+            </ul>
+          </div>
+        </section>
+        <!-- ceo  eee-->
+
+        <!-- ceo-column-bot -->
+        <section class="ceo-column-bot">
+          <div class="ceo-column-bot__inner l-center">
+            <div class="ceo-column-bot__img is-mo-hide">
+              <img src="assets/images/img/ceo-people.png" alt="">
+            </div>
+            <div class="ceo-column-bot__img is-mo-show">
+              <img src="assets/images/img/ceo-people-mo.png" alt="">
+            </div>
+            <div class="ceo-column-bot__txt">
+              <h2 class="cm-title fz-black col-blue">
+                <span class="dot col-blue fz-black">비</span>슷한 생각 <br>
+                해보셨죠?
+              </h2>
+              <p class="cm-title fz-black wow zoomIn" data-wow-delay="0.2s">
+                요새는 더 <br>
+                힘들잖아요...
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- ceo-column-bot eee -->
+
+        <!-- market-status -->
+        <section class="market-status" id="gnb-market">
+          <div class="market-status__txt wow fadeInUp">
+            <h2 class="cm-title col-black fz-black fz-black  l-center">
+              코로나로 <br>
+              열명중 아홉명이 <br>
+              <span class="col-blue fz-black">문닫는…</span>
+            </h2>
+          </div>
+          <div class="market-status__inner">
+            <img src="assets/images/img/bg_market.png" alt="" class="market-status__img is-mo-hide">
+            <img src="assets/images/img/bg_market_mb@2x.png" alt="" class="market-status__img is-mo-show">
+            <div class="market-status__img-group">
+              <div class="cm-speech-bubble">완전 <br>폐업</div>
+              <img src="assets/images/img/market-bubble-deco@2x.png" alt="" class="market-status__img-deco">
+            </div>
+          </div>
+        </section>
+        <!-- market-status eee -->
+
+        <!-- solution -->
+        <section class="solution" id="gnb-solution">
+          <div class="solution__inner l-center">
+            <h2 class="cm-title wow fadeInUp">
+              문닫는 사장님 말고 <br>
+              성공한 CEO가 된다면?
+            </h2>
+            <div class="wow fadeIn" data-wow-delay="0.3s">
+              <div class="cm-title mid">
+                CEO <br>
+                성공패키지 <br>
+                소개합니다
+              </div>
+              <div class="cm-title mid-sm">
+                기획부터 디자인, 개발, 마케팅까지 <br>
+                <span class="fz-ex-bold">모두 한번에</span>
+              </div>
+              <ul class="solution__list">
+                <li class="solution__list--img is-mo-hide">
+                  <img src="assets/images/img/images_main_11.png" alt="">
+                </li>
+                <li class="solution__list--img is-mo-show">
+                  <img src="assets/images/img/images_main_11-mo.png" alt="">
+                </li>
+                <li class="solution__item">
+                  <p class="solution__item--txt"> 수익모델설계</p>
+                </li>
+                <li class="solution__item">
+                  <p class="solution__item--txt">로고 브랜딩</p>
+                </li>
+                <li class="solution__item">
+                  <p class="solution__item--txt">개발 기획</p>
+                </li>
+                <li class="solution__item">
+                  <p class="solution__item--txt">UIUX 디자인</p>
+                </li>
+                <li class="solution__item">
+                  <p class="solution__item--txt">스토리보드</p>
+                </li>
+                <li class="solution__item">
+                  <p class="solution__item--txt">공식홈페이지</p>
+                </li>
+                <li class="solution__item">
+                  <p class="solution__item--txt">마케팅전략</p>
+                </li>
+                <li class="solution__item">
+                  <p class="solution__item--txt">홍보영상</p>
+                </li>
+                <li class="solution__item">
+                  <p class="solution__item--txt">자사 쇼핑몰</p>
+                </li>
+                <li class="solution__item">
+                  <p class="solution__item--txt">제품 리뉴얼</p>
+                </li>
+                <li class="solution__item">
+                  <p class="solution__item--txt">자금유치 전략</p>
+                </li>
+                <li class="solution__item">
+                  <p class="solution__item--txt">SNS 채널관리</p>
+                </li>
+                <li class="solution__item">
+                  <p class="solution__item--txt">체험단, 바이럴</p>
+                </li>
+                <li class="solution__item">
+                  <p class="solution__item--txt">상권분석</p>
+                </li>
+                <li class="solution__item">
+                  <p class="solution__item--txt">경쟁사분석</p>
+                </li>
+                <li class="solution__item">
+                  <p class="solution__item--txt">세금/법률/노무</p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+        <!-- solution eee -->
+
+        <!-- ex-success -->
+        <section class="ex-success" id="gnb-partner">
+          <div class="ex-success__inner l-center">
+            <div class="wow fadeInUp">
+              <div class="cm-title sm col-white">
+                <img src="assets/images/img/pocket-white.svg" alt="" class="cm-pocket-title">
+              </div>
+              <h2 class="cm-title">
+                함께 성공한 <br>
+                사례들
+              </h2>
+              <div class="ex-success__pos">
+                <div class="cm-partner bd-col-white">
+                  <span class="cm-partner__txt ">함께 성공한</span>
+                  <span class="cm-partner__txt bg-white col-blue">파트너</span>
+                </div>
+              </div>
+            </div>
+            <div class="ex-success__mo-wrap">
+              <div class="op-2 is-mo-show">
+                함께 <br>
+                성공한 <br>
+                사례들
+              </div>
+              <ul class="ex-success__list wow fadeIn" data-wow-delay="0.3s">
+                <li class="op-txt op-2 is-mo-hide">
+                  함께 성공한 <br>
+                  사례들
+                </li>
+                <li class="ex-success__item">
+                  <div class="cm-speech-bubble">
+                    D사
+                  </div>
+                  <div class="ex-success__txt-wrap">
+                    <p class="txt">
+                      동대문 <br>
+                      부부에서 <br>
+                      실리콘밸리
+                    </p>
+                    <p class="highlight">
+                      <span class="tit highlight__txt">투자까지</span>
+                    </p>
+                  </div>
+                </li>
+                <li class="ex-success__item">
+                  <div class="cm-speech-bubble">
+                    Y사
+                  </div>
+                  <div class="ex-success__txt-wrap">
+                    <p class="txt">
+                      평범했던<br />
+                      약사가<br />
+                      성공한
+                    </p>
+                    <p class="highlight">
+                      <span class="tit highlight__txt">CEO 되다</span>
+                    </p>
+                  </div>
+                </li>
+                <li class="ex-success__item">
+                  <div class="cm-speech-bubble">
+                    B사
+                  </div>
+                  <div class="ex-success__txt-wrap">
+                    <p class="txt">
+                      공돌이<br />
+                      졸업생이<br />
+                      200억
+                    </p>
+                    <p class="highlight">
+                      <span class="tit highlight__txt">벨류투자</span>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- ex-success eee -->
+
+        <!-- partner -->
+        <section class="partner">
+          <div class="partner__inner l-center">
+            <div class="partner__pos wow fadeInUp" data-wow-delay="0.1s">
+              <h2 class="cm-partner bd-col-black">
+                <span class="cm-partner__txt bg-white col-black">함께 성공한</span>
+                <span class="cm-partner__txt bg-white col-white bg-black">파트너</span>
+              </h2>
+            </div>
+            <ul class="partner__ad-list wow fadeIn" data-wow-delay="0.4s">
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_1.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_19.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_2.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_3.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_4.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_5.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_6.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_7.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_8.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_9.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_10.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_11.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_12.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_13.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_14.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_15.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_16.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_17.svg" alt="" class="partner__ad-img">
+              </li>
+              <li class="partner__ad-item">
+                <img src="assets/images/img/logo_18.svg" alt="" class="partner__ad-img">
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- partner eee -->
+
+        <!-- 광고섹션 1 -->
+        <section class="main-ad">
+          <div class="main-ad__inner l-center">
+            <h2 class="cm-title col-white wow fadeInUp">
+              어떻게 <span class="dot">한</span><span class="dot">번</span><span class="dot">에</span> 다하죠?
+            </h2>
+            <div class="wow fadeIn" data-wow-delay="0.3s">
+              <div class="cm-title mid-sm col-white">
+                정직, 젊음 그리고 스마트함을 갖춘 <br>
+                각 분야 전문가들이
+              </div>
+              <div class="cm-title mid-sm mt17 col-white">
+                당신의 <br class="is-mo-show"> <span class="fz-bold">든든한 성공파트너</span>가 <br>
+                되기 때문입니다!
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 광고섹션 1 ee-->
+
+        <!-- 광고섹션 02 -->
+        <section class="main-ad02">
+          <div class="main-ad02__inner">
+            <h2 class="l-center cm-title col-white">
+              <img src="assets/images/img/effect.png" alt="" class="main-ad02__deco">
+              <span>혼자서 <br>
+                고군분투 <br>
+                했다면...</span>
+            </h2>
+          </div>
+          <img src="assets/images/img/images_main_14.png" alt="" class="main-ad02__bg-img">
+        </section>
+        <!-- 광고섹션 02 eee -->
+
+        <!-- team -->
+        <section class="team" id="gnb-team">
+          <div class="obj1">
+          </div>
+
+          <div class="team__inner l-center">
+            <div class="team__txt-wrap wow fadeInUp">
+              <div class="cm-title sm col-white">
+                <img src="assets/images/img/pocket-extra-white.svg" alt="" class="cm-pocket-title">
+              </div>
+              <h2 class="cm-title col-white">
+                <span class="cm-speech-bubble bg-blue">
+                  성공
+                </span>
+                이제 젊고, <br>
+                유능한 팀과 <br class="is-mo-show">
+                함께!
+              </h2>
+            </div>
+
+            <div class="team__position-wrap wow fadeIn" data-wow-delay="0.2s">
+              <ul class="team__position">
+                <li class="team__position--img">
+                  <img src="assets/images/img/images_main_13.png" alt="">
+                </li>
+                <li class="team__position--list bg-yellow">
+                  <span>마케터</span>
+                </li>
+                <li class="team__position--list bg-purple">
+                  퍼포먼스
+                </li>
+              </ul>
+
+              <ul class="team__position">
+                <li class="team__position--list bg-pink">
+                  디자이너
+                </li>
+                <li class="team__position--list bg-green">
+                  개발자
+                </li>
+                <li class="team__position--list bg-blueish">
+                  기획자
+                </li>
+                <li class="team__position--list bg-blue">
+                  PM
+                </li>
+              </ul>
+            </div>
+
+            <div class="team__pos-txt wow fadeInUp">
+              <div class="cm-title col-white">
+                <span class="dot lg">정직</span>, <span class="dot lg">젊음</span>, <span class="dot lg black">스마트</span>
+              </div>
+
+              <div class="cm-title sm-lg col-white">
+                기획/ 디자인/ 개발/ 마케팅 <br>
+                <span class="fz-bold">30명의 DNA</span> 입니다
+              </div>
+            </div>
+
+            <ul class="team__ceo-list wow fadeInUp" data-wow-delay="0.2s">
+              <li class="team__ceo-list--item">
+                <div class="team__ceo-list--item-img">
+                  <img src="assets/images/img/images_main_20.png" alt="">
+                </div>
+                <div class="team__ceo-list--item-txt">
+                  <p class="is-tit">정규진 <span class="fz-bold">CEO</span></p>
+                  <p class="is-txt">(주)포켓컴퍼니 대표이사</p>
+                </div>
+              </li>
+              <li class="team__ceo-list--item">
+                <div class="team__ceo-list--item-img">
+                  <img src="assets/images/img/images_main_19.png" alt="">
+                </div>
+                <div class="team__ceo-list--item-txt">
+                  <p class="is-tit">이현성 <span class="fz-bold">CDO</span></p>
+                  <p class="is-txt">(주)포켓컴퍼니 대표이사</p>
+                </div>
+              </li>
+              <li class="team__ceo-list--item">
+                <div class="team__ceo-list--item-img">
+                  <img src="assets/images/img/images_main_18.png" alt="">
+                </div>
+                <div class="team__ceo-list--item-txt">
+                  <p class="is-tit">권중선 <span class="fz-bold">CTO</span></p>
+                  <p class="is-txt">(주)포켓컴퍼니 개발이사</p>
+                </div>
+              </li>
+              <li class="team__ceo-list--item">
+                <div class="team__ceo-list--item-img">
+                  <img src="assets/images/img/images_main_21.png" alt="">
+                </div>
+                <div class="team__ceo-list--item-txt">
+                  <p class="is-tit">추성후 <span class="fz-bold">CFO</span></p>
+                  <p class="is-txt">(주)포켓컴퍼니 재무이사</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="team__package" id="gnb-package">
+              <div class="team__package--title wow fadeInUp">
+                <div class="cm-title">CEO</div>
+                <div class="cm-title">
+                  성공 <br>
+                  패키지!
+                </div>
+              </div>
+              <ul class="team__package--list">
+                <li class="team__package--box wow fadeInUp">
+                  <div class="team__package--column">
+                    <div class="column-left">
+                      <div class="cm-speech-bubble-type2 is-mo-hide">
+                        패키지1
+                      </div>
+                      <div class="cm-speech-bubble-type2 bg-blue is-mo-show">
+                        패키지1
+                      </div>
+                      <div class="column-left__txt">
+                        <div class="cm-title">
+                          IT플랫폼 성공
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column-right">
+                      <img src="assets/images/img/coin.png" alt="">
+
+                      <div class="is-txt">
+                        월 <span class="fz-bold">350 </span>만원
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="team__package--info">
+                    <ul class="team__package--info__list">
+                      <li class="team__package--info__item">수익모델 설계</li>
+                      <li class="team__package--info__item">개발기획</li>
+                      <li class="team__package--info__item">스토리보드 설계</li>
+                      <li class="team__package--info__item">마케팅 전략 수립</li>
+                    </ul>
+                    <ul class="team__package--info__list">
+                      <li class="team__package--info__item">체험단, 바이럴마케팅</li>
+                      <li class="team__package--info__item">로고 디자인</li>
+                      <li class="team__package--info__item">UIㆍUX디자인</li>
+                      <li class="team__package--info__item">홈페이지, 어플 개발</li>
+                    </ul>
+                    <ul class="team__package--info__list">
+                      <li class="team__package--info__item">SNS, 유튜브 채널 세팅</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="team__package--box wow fadeInUp">
+                  <div class="team__package--column">
+                    <div class="column-left">
+                      <div class="cm-speech-bubble-type2 bg-blue">
+                        패키지2
+                      </div>
+                      <div class="column-left__txt">
+                        <div class="cm-title">
+                          제조/유통 성공
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column-right">
+                      <img src="assets/images/img/coin.png" alt="">
+
+                      <div class="is-txt">
+                        월 <span class="fz-bold">350 </span>만원
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__package--info">
+                    <ul class="team__package--info__list">
+                      <li class="team__package--info__item">수익모델 설계</li>
+                      <li class="team__package--info__item">패키지 디자인</li>
+                      <li class="team__package--info__item">제품리뉴얼</li>
+                      <li class="team__package--info__item">자금유치 전략</li>
+                    </ul>
+                    <ul class="team__package--info__list">
+                      <li class="team__package--info__item">홍보영상 제작</li>
+                      <li class="team__package--info__item">자사쇼핑몰 개발</li>
+                      <li class="team__package--info__item">마케팅전략 수립</li>
+                      <li class="team__package--info__item">SNS, 유튜브 채널 세팅</li>
+                    </ul>
+                    <ul class="team__package--info__list">
+                      <li class="team__package--info__item">체험단, 바이럴마케팅</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="team__package--box wow fadeInUp">
+                  <div class="team__package--column">
+                    <div class="column-left">
+                      <div class="cm-speech-bubble-type2 bg-blue">
+                        패키지3
+                      </div>
+                      <div class="column-left__txt">
+                        <div class="cm-title">
+                          프랜차이즈 성공
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column-right">
+                      <img src="assets/images/img/coin.png" alt="">
+
+                      <div class="is-txt">
+                        월 <span class="fz-bold">350 </span>만원
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__package--info">
+                    <ul class="team__package--info__list">
+                      <li class="team__package--info__item">상권분석</li>
+                      <li class="team__package--info__item">경쟁사분석</li>
+                      <li class="team__package--info__item">제품구성</li>
+                      <li class="team__package--info__item">운영 시스템 개발</li>
+                    </ul>
+                    <ul class="team__package--info__list">
+                      <li class="team__package--info__item">홍보영상제작</li>
+                      <li class="team__package--info__item">가맹점모집 홈페이지 개발</li>
+                      <li class="team__package--info__item">마케팅전략수립</li>
+                      <li class="team__package--info__item">SNS, 유튜브 채널 세팅</li>
+                    </ul>
+                    <ul class="team__package--info__list">
+                      <li class="team__package--info__item">체험단, 바이럴마케팅</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+        <!-- team eee -->
+        <!-- detail -->
+        <section class="detail-section" id="gnb-detail">
+          <div class="l-center">
+            <div class="cm-speech-bubble">
+              잠깐!
+            </div>
+            <div class="wow fadeInUp">
+              <div class="with-line fz-ex-bold">
+                <div class="with-line__txt">여기서 잠깐!</div>
+              </div>
+              <h2 class="cm-title col-white detail-section__center-txt">
+                정부자금을 받으면,<br />
+                <span class="fz-bold">돈을 받으면서</span>
+              </h2>
+              <div class="cm-title col-white">
+                운영할 수있는 것 아세요?
+              </div>
+            </div>
+            <div class="wow fadeInUp">
+              <div class="round-box-wrap">
+                <div class="round-box col-black">
+                  파트너 시작
+                </div>
+                <div class="round-box__side-text">
+                  1달부터
+                </div>
+                <div class="round-box col-black">
+                  정부자금 지원
+                </div>
+                <div class="round-box__side-text">
+                  3달 동안
+                </div>
+                <div class="round-box is-black">
+                  평균 1억원 지원
+                </div>
+              </div>
+              <div class="cm-title col-white">
+                <span>
+                  1년 이상 비용없이 <br class="is-tab-show" />파트너쉽이<br class="is-tab-hide" />
+                  가능합니다!
+                </span>
+                <div class="fz-bold detail-section__last-text">아니 오히려 돈이 남죠!</div>
+              </div>
+            </div>
+          </div>
+          <div class="detail-section__img-wrap">
+            <img src="assets/images/img/images_main_17_1.png" alt="새로운 시작" class="detail-section__img" />
+          </div>
+        </section>
+        <!-- detail eee -->
+        <!-- regist -->
+        <section class="regist-section">
+          <div class="l-center">
+            <div class="wow fadeInUp">
+              <h2 class="cm-title col-white">
+                정부지원이<br />
+                어려우시다구요?
+              </h2>
+              <div class="cm-title regist-section__first-center-text col-white">
+                걱정마세요!
+              </div>
+              <div class="cm-title col-white sub-text">
+                저희는 자금유치<br />
+                전문 컨설팅사니까요!
+              </div>
+            </div>
+            <div class="wow fadeInUp">
+              <div class="cm-title white-box-content">
+                <span class="white-box-content__text">
+                  하고싶으시죠?
+                </span>
+              </div>
+              <div class="cm-title sm-lg col-white sub-text">
+                어떻게 어디서부터<br />
+                <span class="fz-bold">젊고 능력있는</span> 저희와 함께<br />
+                일할 수 있을지 궁금하시죠?
+              </div>
+              <div class="white-block bg-white">
+                <img src="assets/images/img/images_main_23.png" alt="서류뭉치" class="obj__img" />
+                <div class="cm-title sm-lg col-black sub-title">
+                  지금, <br class="is-tab-show" />신청만 하셔도
+                </div>
+                <div class="cm-title col-black sub-text">
+                  50만원 상당의<br />
+                  <span class="fz-bold col-black">맞춤 일정<br class="is-tab-show" />설계 Report</span>를<br />
+                  제공해드립니다!
+                </div>
+                <div class="btn-wrap">
+                  <button type="button" class="btn default-btn"
+                    onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSftdcG6ixWChpKLxyutpD4QK3HebW7xnN8dBjWFLCwQ9lQ--Q/viewform');">
+                    <span class="default-btn__text">성공 신청하기</span>
+                    <small class="default-btn__sub-text">스타트!</small>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="cm-title col-white sub-text sub-text--last wow fadeIn">
+              젊은 포켓 컴퍼니와<br />
+              <span class="fz-bold">
+                함께 하고 싶다면,
+              </span><br />
+              <span class="with-line"><span class="with-line__txt">신청하세요!</span></span>
+            </div>
+          </div>
+        </section>
+        <!-- regist eee -->
+      </div>
+      <!-- END page -->
+    </div>
+  </div>
+  <script src="assets/js/custom/ui.js"></script>
+</body>
+
+</html>
